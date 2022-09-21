@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" id="input" oninput="output()"> is Number <span id="result"></span></label>
+<script>
+    function aCharacter(a) {
+        return a * 0 === 0;
+    }
+
+    function output() {
+        let Mytext = document.getElementById("input").value
+        document.getElementById("result").innerHTML = aCharacter(Mytext).toString()
+    }
+</script>
+</body>
+</html>

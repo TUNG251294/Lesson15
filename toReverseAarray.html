@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = parseInt(prompt("Enter number of elements of the array"));
+    let arr = new Array(N);
+    for (let i = 0; i < N; i++) {
+        arr[i] = prompt("Enter Number");
+    }
+
+    for (let first = 0, last = N - 1; first < last; first++, last--) {
+        let temp = arr[first];
+        arr[first] = arr[last];
+        arr[last] = temp;
+    }
+    console.log(arr)
+</script>
+</body>
+</html>

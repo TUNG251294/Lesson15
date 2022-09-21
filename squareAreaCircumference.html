@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function square(a) {
+        a = a * a;
+        return a;
+    }
+
+    let Num = prompt("Enter Number");
+    document.write("Square of " + Num + " is " + square(Num) + "<br>");
+
+    function areaCircumference(r) {
+        const PI = 3.14;
+        let area = PI * r * r;
+        let circumference = 2 * PI * r;
+        let result = "Area is " + area + "<br>" + "Circumference is " + circumference;
+        return result;
+    }
+
+    let R = parseFloat(prompt("Enter Radius"));
+    document.write(areaCircumference(R));
+</script>
+</body>
+</html>

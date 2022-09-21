@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Factorial of <input type="number" id="input" oninput="display()" placeholder="Enter Number"> is <span
+        id="result"></span></label>
+
+<script>
+    function factorial(x) {
+        if (x === 0) {
+            return 1;
+        } else {
+            return x * factorial(x - 1);    //Hàm đệ quy gọi lại chính nó
+        }
+    }
+
+    function display() {
+        let input = parseInt(document.getElementById("input").value);
+        document.getElementById("result").innerHTML = factorial(input);
+    }
+</script>
+</body>
+</html>

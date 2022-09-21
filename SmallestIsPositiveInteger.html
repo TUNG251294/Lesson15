@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script> let arr = new Array(3)
+for (let i = 0; i < 3; i++) {
+    arr[i] = prompt("Enter Integer");
+}
+let Min = arr[0];
+for (let i = 1; i < arr.length; i++) {
+    if (Min > arr[i]) {
+        Min = arr[i]
+    }
+}
+
+function positiveInt(a) {
+    return a > 0;
+}
+
+document.write("Smallest number " + Min + " is Positive Integer " + "<br>" + positiveInt(Min))
+</script>
+</body>
+</html>

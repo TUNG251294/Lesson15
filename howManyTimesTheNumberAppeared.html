@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = parseInt(prompt("Enter number of elements of the array"));
+    let arr = new Array(N);
+    for (let i = 0; i < N; i++) {
+        arr[i] = prompt("Enter a character");
+    }
+    let anOptionalCha = prompt("Enter an optional character");
+
+    function count(array, a) {
+        let cnt = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === a) {               //toán tử so sánh không dùng 1 dấu =
+                cnt++;
+            }
+        }
+        if (cnt === 0) {
+            cnt = -1;
+        }
+        return cnt;
+    }
+
+    if (count(arr, anOptionalCha) === -1) {
+        console.log("The character was not appeared")
+    } else
+        console.log(anOptionalCha + " appeared " + count(arr, anOptionalCha) + " times")
+</script>
+</body>
+</html>
