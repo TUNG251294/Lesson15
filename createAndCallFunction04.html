@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function searchFatherArray(inputValue,arr1,arr2){
+        let result = "Star was not found";
+        for (let i in arr1) {
+            if (arr1[i] === inputValue) {
+                result = arr2[i];
+            }
+        }
+        return result;
+    }
+
+    let Star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let Constellation = ["Ursa Minor", "Taurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let starName = prompt("Enter Start Name")
+    document.write(searchFatherArray(starName,Star,Constellation))
+</script>
+</body>
+</html>

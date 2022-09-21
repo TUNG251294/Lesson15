@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function toCompare(a, b) {
+        let result;
+        if (a > b) {
+            result = alert("Number " + a + " greater than Number " + b)
+            return result;
+        } else {
+            result = a + b;
+            return result;
+        }
+    }
+
+    let Number1 = parseFloat(prompt("Enter number 1"))
+    let Number2 = parseFloat(prompt("Enter number 2"))
+    console.log(toCompare(Number1, Number2))
+</script>
+</body>
+</html>
